@@ -1,3 +1,4 @@
+import BackToTop from './components/BackToTop';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -386,6 +387,7 @@ function App() {
         </ContentWrapper>
         {showFooter && <Footer />}
         {showMobileNav && <MobileBottomNav />}
+        <BackToTop />   {/* ← Back to top button added here */}
       </div>
     );
   };
